@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS MARGINS</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS",sans-serif;
+        }
+        div{
+            background-color: lightsalmon;
+            width: 500px;
+            padding: 10px;
+            margin: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            box-shadow: 0 0 15px black;
+        }
+        p{
+            border: 5px solid darkred;
+        }
+        div:first-child p{
+            margin-top: 60px;
+        }
+        div:nth-child(2) p{
+            margin-right: 50mm;
+        }
+        div:nth-child(3) p{
+            margin-bottom: 10%;
+        }
+        div:nth-child(4) p{
+            margin-left: 1cm;
+        }
+        div:last-child p{
+            margin: 1in 1cm 10px 20mm;
+        }
+    </style>
+</head>
+<body>
+
+<!-- MARGIN TOP -->
+<div>
+    <p>margin</p>
+    <p>margin</p>
+    <p>margin top</p>
+    <p>margin</p>
+</div>
+<!-- MARGIN RIGHT -->
+<div>
+    <p>margin</p>
+    <p>margin</p>
+    <p>margin right</p>
+    <p>margin</p>
+</div>
+
+<!-- MARGIN BOTTOM -->
+<div>
+    <p>margin</p>
+    <p>margin</p>
+    <p>margin bottom</p>
+    <p>margin</p>
+</div>
+
+<!-- MARGIN LEFT -->
+<div>
+    <p>margin</p>
+    <p>margin</p>
+    <p>margin left</p>
+    <p>margin</p>
+</div>
+
+<!-- MARGIN ALL SIDES -->
+<div>
+    <p>margin</p>
+    <p>margin</p>
+    <p>margin ALL</p>
+    <p>margin</p>
+</div>
+
+</body>
+</html>

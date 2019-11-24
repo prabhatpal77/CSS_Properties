@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS paddingS</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS",sans-serif;
+        }
+        div{
+            background-color: lightsalmon;
+            width: 500px;
+            padding: 10px;
+            margin: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            box-shadow: 0 0 15px black;
+        }
+        p{
+            border: 5px solid darkred;
+        }
+        div:first-of-type p{
+            padding-top: 30px;
+        }
+        div:nth-of-type(2) p{
+            padding-right: 100px;
+        }
+        div:nth-child(3) p{
+            padding-bottom: 10mm;
+        }
+        div:nth-child(4) p{
+            padding-left: 20%;
+        }
+        div:last-child p{
+            padding: 10px 10mm 10% 1cm;
+        }
+    </style>
+</head>
+<body>
+
+<!-- padding TOP -->
+<div>
+    <p>padding</p>
+    <p>padding</p>
+    <p>padding top</p>
+    <p>padding</p>
+</div>
+<!-- padding RIGHT -->
+<div>
+    <p>padding</p>
+    <p>padding</p>
+    <p>padding right</p>
+    <p>padding</p>
+</div>
+
+<!-- padding BOTTOM -->
+<div>
+    <p>padding</p>
+    <p>padding</p>
+    <p>padding bottom</p>
+    <p>padding</p>
+</div>
+
+<!-- padding LEFT -->
+<div>
+    <p>padding</p>
+    <p>padding</p>
+    <p>padding left</p>
+    <p>padding</p>
+</div>
+
+<!-- padding ALL SIDES -->
+<div>
+    <p>padding</p>
+    <p>padding</p>
+    <p>padding ALL</p>
+    <p>padding</p>
+</div>
+
+</body>
+</html>

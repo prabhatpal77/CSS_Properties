@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Borders</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+        }
+        div{
+            background-color: lightsalmon;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            width: 500px;
+        }
+        div:first-child>h2{
+            border-top: 10px double black;
+        }
+        div:nth-child(2)>h2{
+            border-right: 2px dotted blueviolet;
+        }
+        div:nth-child(3)>h2{
+            border-bottom: 3px dashed gold;
+        }
+        div:nth-child(4)>h2{
+            border-left: 4px solid aqua;
+        }
+        div:nth-child(5)>h2{
+            border: 6px dashed khaki;
+        }
+        div:nth-child(6)>h2{
+            border: 6px double gold;
+            border-radius: 30%;
+        }
+        div:nth-last-child(2)>h2{
+            border: 6px dotted green;
+            border-radius: 20px 0px 20px 0px;
+        }
+        #movie{
+            border: 30px solid gray;
+            border-radius: 50%;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+<!-- BORDER TOP -->
+<div>
+    <h2>BORDER TOP</h2>
+</div>
+
+<!-- BORDER RIGHT -->
+<div>
+    <h2>BORDER RIGHT</h2>
+</div>
+
+<!-- BORDER BOTTOM -->
+<div>
+    <h2>BORDER BOTTOM</h2>
+</div>
+
+<!-- BORDER LEFT -->
+<div>
+    <h2>BORDER LEFT</h2>
+</div>
+
+<!-- BORDER ALL SIDES -->
+<div>
+    <h2>BORDER ALL</h2>
+</div>
+
+<!-- ROUNDER BORDER ALL SIDES -->
+<div>
+    <h2>ROUNDED ALL</h2>
+</div>
+
+<!-- ROUNDED TWO SIDES -->
+<div>
+    <h2>ROUNDED TWO</h2>
+</div>
+
+<!-- CUSTOM BORDER -->
+<div id="movie">
+
+</div>
+
+
+</body>
+</html>
