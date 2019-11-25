@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS DropDown</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome.min.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;          
+        }
+        .dropdown{
+            position: relative;
+            display:inline-block;
+            z-index: 10;
+        }
+        .dropdown_hover{
+            display: inline-block;
+            padding: 10px;
+            background: aliceblue;
+            color: aqua;
+            cursor: pointer;
+            border: none;
+        }
+        .dropdown_hover:hover{
+            background: blueviolet;
+        }
+        .dropdown_list{
+            position: absolute;
+            display: none;
+            top: 100%;
+            left: 0;
+            min-width: 200px;
+            background: white;
+            color:#323b40;
+            box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+        }
+        .dropdown:hover .dropdown_list{
+            display: block;
+        }
+        .dropdown_list a{
+            display: block;
+            padding: 10px;
+            border: none;
+            text-decoration: none;
+            border-top: solid 1px #e0e0e0;
+                    }
+        .dropdown_list a:hover{
+            background: #f0f0f0;
+            color: seagreen;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="dropdown">
+        <button class="dropdown_hover">Courses <i class="fa fa-arrow-circle-o-down"></i></button>
+        <div class="dropdown_list">
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">JavaScript</a>
+            <a href="#">JQuery</a>
+            <a href="#">AJAX</a>
+            <a href="#">Bootstrap</a>
+            <a href="#">Angular JS</a>
+        </div>
+    </div>
+</body>
+</html>
